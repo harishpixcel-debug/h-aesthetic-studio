@@ -13,8 +13,8 @@ export const studio = {
 };
 
 export const contact = {
-  phone: "+91 85018-78948",
-  phoneHref: "tel:+918501878948",
+  phone: "+91 85918-78948",
+  phoneHref: "tel:+918591878948",
   email: null as string | null, // "coming soon" until supplied
   instagram: null as string | null,
   behance: null as string | null,
