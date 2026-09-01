@@ -13,9 +13,10 @@ export const studio = {
 };
 
 export const contact = {
-  phone: "+91 85918-78948",
-  phoneHref: "tel:+918591878948",
-  email: null as string | null, // "coming soon" until supplied
+  phone: "+91 85018-78948",
+  phoneHref: "tel:+918501878948",
+  email: "h.aestheticstudioo@gmail.com",
+  emailHref: "mailto:h.aestheticstudioo@gmail.com",
   instagram: null as string | null,
   behance: null as string | null,
 };
