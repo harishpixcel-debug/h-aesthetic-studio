@@ -44,7 +44,9 @@ export default function InquiryForm() {
           <a href={contact.phoneHref} className="link-arrow">
             {contact.phone} <span className="arrow">→</span>
           </a>
-          <span className="inquiry-pending">Email — coming soon</span>
+          <a href={contact.emailHref} className="link-arrow">
+            {contact.email} <span className="arrow">→</span>
+          </a>
         </div>
       </div>
 
