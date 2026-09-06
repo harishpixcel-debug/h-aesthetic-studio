@@ -20,10 +20,37 @@ export default function StudioPage() {
           fontSize: "clamp(2.4rem, 6vw, 4.4rem)",
           lineHeight: 1.04,
           maxWidth: "18ch",
-          marginBottom: 56
+          marginBottom: 40
         }}>
           Design, treated as our own.<br /><em>One standard of work.</em>
         </h1>
+
+        {/* Material plates — small, horizontal, understated */}
+        <div style={{
+          display: "flex",
+          gap: 16,
+          marginBottom: 48,
+          maxWidth: 520
+        }}>
+          <div style={{ position: "relative", width: 220, aspectRatio: "3 / 2", overflow: "hidden", flexShrink: 0 }}>
+            <Image
+              src="/images/studio/studio-plate-commercial.jpg"
+              alt="Modern commercial office interior"
+              fill
+              style={{ objectFit: "cover" }}
+              sizes="220px"
+            />
+          </div>
+          <div style={{ position: "relative", width: 220, aspectRatio: "3 / 2", overflow: "hidden", flexShrink: 0 }}>
+            <Image
+              src="/images/studio/studio-plate-residential.jpg"
+              alt="Minimalist residential living space"
+              fill
+              style={{ objectFit: "cover" }}
+              sizes="220px"
+            />
+          </div>
+        </div>
 
         {/* Divider */}
         <div style={{
@@ -32,33 +59,6 @@ export default function StudioPage() {
           background: "var(--accent)",
           marginBottom: 48
         }}></div>
-
-        {/* Material plates */}
-        <div style={{
-          display: "grid",
-          gridTemplateColumns: "1fr 1fr",
-          gap: "clamp(16px, 3vw, 32px)",
-          marginBottom: 64
-        }}>
-          <div style={{ position: "relative", aspectRatio: "4 / 5", overflow: "hidden" }}>
-            <Image
-              src="/images/studio/studio-plate-concrete.jpg"
-              alt="Raw concrete surface in warm raking light"
-              fill
-              style={{ objectFit: "cover" }}
-              sizes="(min-width: 768px) 45vw, 90vw"
-            />
-          </div>
-          <div style={{ position: "relative", aspectRatio: "4 / 5", overflow: "hidden" }}>
-            <Image
-              src="/images/studio/studio-plate-travertine.jpg"
-              alt="Travertine stone surface detail"
-              fill
-              style={{ objectFit: "cover" }}
-              sizes="(min-width: 768px) 45vw, 90vw"
-            />
-          </div>
-        </div>
 
         {/* Body copy */}
         <div style={{
