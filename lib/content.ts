@@ -17,8 +17,10 @@ export const contact = {
   phoneHref: "tel:+918591878948",
   email: "h.aestheticstudioo@gmail.com",
   emailHref: "mailto:h.aestheticstudioo@gmail.com",
-  instagram: null as string | null,
+  instagram: "h.aesthetic.studio",
+  instagramHref: "https://www.instagram.com/h.aesthetic.studio/",
   behance: null as string | null,
+  website: "h-aestheticstudio.com",
 };
 
 export const navLinks = [
