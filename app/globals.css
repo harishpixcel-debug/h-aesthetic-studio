@@ -193,8 +193,8 @@ a:focus-visible, button:focus-visible { outline: 1.5px solid var(--accent); outl
 .exp-desc { font-size: 13px; color: #5c584f; margin-top: 8px; line-height: 1.45; }
 
 /* PROCESS */
-.process-list { display: grid; grid-template-columns: repeat(6, 1fr); gap: 0; border-top: 1px solid var(--stone-line-dark); margin-top: 32px; }
-.process-step { padding: 24px 16px 0 0; border-right: 1px solid var(--stone-line-dark); }
+.process-list { display: grid; grid-template-columns: repeat(6, 1fr); gap: 0; border-top: 1px solid var(--stone-line-dark); margin-top: 32px; overflow: hidden; }
+.process-step { padding: 24px 16px 24px 0; border-right: 1px solid var(--stone-line-dark); overflow: hidden; }
 .process-step:last-child { border-right: none; padding-right: 0; }
 .process-num { font-family: var(--font-mono); font-size: 10px; color: rgba(245,242,236,0.4); }
 .process-name { font-family: var(--font-ui); font-weight: 600; font-size: clamp(1rem, 1.6vw, 1.2rem); margin-top: 12px; }
@@ -219,7 +219,7 @@ a:focus-visible, button:focus-visible { outline: 1.5px solid var(--accent); outl
 @media (max-width: 760px) { .ask-inner { grid-template-columns: 1fr; gap: 28px; } }
 
 /* FINAL CTA */
-.final-cta-scene { margin-top: 0; }
+.final-cta-scene { margin-top: 0; min-height: auto; padding: 100px 0; }
 .final-cta-title { font-size: clamp(2.6rem, 9vw, 6.4rem); line-height: 0.98; max-width: 16ch; }
 .final-cta-title em { display: block; }
 .final-cta-actions { margin-top: 52px; }
