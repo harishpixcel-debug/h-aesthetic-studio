@@ -6,7 +6,7 @@ import Reveal from "./Reveal";
 
 // Index-matched to expertiseAreas order in lib/content.ts:
 // S.01 Space Planning, S.02 Hotels, S.03 Cafés, S.04 Restaurants,
-// S.05 Co-working Offices. S.06 (Cinematography) has no photo yet —
+// S.05 Co-working Offices. S.06 Cinematography, —
 // left undefined so it falls back to the SVG placeholder below.
 const expertiseImages: (string | undefined)[] = [
   "/images/expertise/expertise-space-planning.jpg",
@@ -14,6 +14,7 @@ const expertiseImages: (string | undefined)[] = [
   "/images/expertise/expertise-cafes.jpg",
   "/images/expertise/expertise-restaurants.jpg",
   "/images/expertise/expertise-coworking.jpg",
+  "/images/expertise/expertise-cinematography.jpg"
   undefined,
 ];
 
