@@ -27,6 +27,7 @@ export default function Footer() {
           <a href="/contact">Ask h-aesthetic</a>
           <a href={contact.phoneHref}>{contact.phone}</a>
           <a href={contact.emailHref}>{contact.email}</a>
+          <a href={contact.instagramHref} target="_blank" rel="noopener noreferrer">Instagram</a>
         </div>
       </div>
       <div className="container footer-bottom">
