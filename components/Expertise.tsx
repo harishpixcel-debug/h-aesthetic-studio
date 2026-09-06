@@ -14,7 +14,7 @@ const expertiseImages: (string | undefined)[] = [
   "/images/expertise/expertise-cafes.jpg",
   "/images/expertise/expertise-restaurants.jpg",
   "/images/expertise/expertise-coworking.jpg",
-  "/images/expertise/expertise-cinematography.jpg"
+  "/images/expertise/expertise-cinematography.jpg",
   undefined,
 ];
 
