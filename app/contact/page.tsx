@@ -23,9 +23,9 @@ export default function ContactPage() {
           <a href={contact.emailHref} className="link-arrow">
             {contact.email} <span className="arrow">→</span>
           </a>
-          <span style={{ fontFamily: "var(--font-mono)", fontSize: 12, color: "var(--stone)" }}>
-            Instagram — coming soon
-          </span>
+          <a href={contact.instagramHref} target="_blank" rel="noopener noreferrer" className="link-arrow">
+            @{contact.instagram} <span className="arrow">→</span>
+          </a>
           <span style={{ fontFamily: "var(--font-mono)", fontSize: 12, color: "var(--stone)" }}>
             Behance — coming soon
           </span>
