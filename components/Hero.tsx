@@ -8,7 +8,7 @@ export default function Hero() {
   useEffect(() => {
     const onScroll = () => {
       if (visualRef.current) {
-        visualRef.current.style.transform = `translateY(${window.scrollY * 0.12}px)`;
+        visualRef.current.style.transform = `translateY(${window.scrollY * 0.15}px)`;
       }
     };
     window.addEventListener("scroll", onScroll, { passive: true });
@@ -17,23 +17,25 @@ export default function Hero() {
 
   return (
     <section className="scene scene-full on-dark hero">
-      <div className="film-frame" ref={visualRef} aria-hidden="true">
-        <svg viewBox="0 0 1400 900" preserveAspectRatio="xMidYMid slice">
-          <line className="ln" x1="0" y1="450" x2="1400" y2="450" />
-          <line className="ln" x1="700" y1="0" x2="700" y2="900" />
-          <rect className="ln-accent" x="700" y="0" width="380" height="390" />
-          <line className="ln" x1="0" y1="0" x2="700" y2="450" />
-          <circle className="ln" cx="1080" cy="620" r="150" />
-          <line className="ln" x1="0" y1="900" x2="1400" y2="0" />
-        </svg>
-      </div>
+      {/* Real background image — generated, not stock photography */}
+      <div
+        ref={visualRef}
+        className="film-frame"
+        style={{
+          backgroundImage: "url('/hero-bg.jpg')",
+          backgroundSize: "cover",
+          backgroundPosition: "center 40%",
+          transform: "scale(1.08)",
+          transformOrigin: "center center",
+        }}
+        aria-hidden="true"
+      />
       <div className="film-vignette" />
       <div className="hero-content reveal is-visible">
-        {/* Logo lockup — responsive, never breaks */}
         <div className="hero-lockup">
           <div className="hero-wordmark">
             <span className="hero-h">h-aesthetic</span>
-            <span className="hero-studio">studio</span>
+            <span className="hero-s">studio</span>
           </div>
           <div className="hero-lockup-bottom">
             <div className="hero-rule" aria-hidden="true"></div>
@@ -49,9 +51,6 @@ export default function Hero() {
             Start a Project
           </a>
         </div>
-      </div>
-      <div className="film-caption">
-        Visual placeholder — photography / film TBC
       </div>
     </section>
   );
