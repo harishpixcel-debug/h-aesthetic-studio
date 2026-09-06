@@ -30,24 +30,24 @@ export default function StudioPage() {
           display: "flex",
           gap: 16,
           marginBottom: 48,
-          maxWidth: 520
+          maxWidth: 700
         }}>
-          <div style={{ position: "relative", width: 220, aspectRatio: "3 / 2", overflow: "hidden", flexShrink: 0 }}>
+          <div style={{ position: "relative", width: 320, aspectRatio: "3 / 2", overflow: "hidden", flexShrink: 0 }}>
             <Image
               src="/images/studio/studio-plate-commercial.jpg"
               alt="Modern commercial office interior"
               fill
               style={{ objectFit: "cover" }}
-              sizes="220px"
+              sizes="320px"
             />
           </div>
-          <div style={{ position: "relative", width: 220, aspectRatio: "3 / 2", overflow: "hidden", flexShrink: 0 }}>
+          <div style={{ position: "relative", width: 320, aspectRatio: "3 / 2", overflow: "hidden", flexShrink: 0 }}>
             <Image
               src="/images/studio/studio-plate-residential.jpg"
               alt="Minimalist residential living space"
               fill
               style={{ objectFit: "cover" }}
-              sizes="220px"
+              sizes="320px"
             />
           </div>
         </div>
