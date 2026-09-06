@@ -1,4 +1,5 @@
 import Reveal from "@/components/Reveal";
+import Image from "next/image";
 
 export const metadata = {
   title: "Studio — h-aesthetic studio",
@@ -31,6 +32,33 @@ export default function StudioPage() {
           background: "var(--accent)",
           marginBottom: 48
         }}></div>
+
+        {/* Material plates */}
+        <div style={{
+          display: "grid",
+          gridTemplateColumns: "1fr 1fr",
+          gap: "clamp(16px, 3vw, 32px)",
+          marginBottom: 64
+        }}>
+          <div style={{ position: "relative", aspectRatio: "4 / 5", overflow: "hidden" }}>
+            <Image
+              src="/images/studio/studio-plate-concrete.jpg"
+              alt="Raw concrete surface in warm raking light"
+              fill
+              style={{ objectFit: "cover" }}
+              sizes="(min-width: 768px) 45vw, 90vw"
+            />
+          </div>
+          <div style={{ position: "relative", aspectRatio: "4 / 5", overflow: "hidden" }}>
+            <Image
+              src="/images/studio/studio-plate-travertine.jpg"
+              alt="Travertine stone surface detail"
+              fill
+              style={{ objectFit: "cover" }}
+              sizes="(min-width: 768px) 45vw, 90vw"
+            />
+          </div>
+        </div>
 
         {/* Body copy */}
         <div style={{
