@@ -5,8 +5,8 @@ import { expertiseAreas } from "@/lib/content";
 import Reveal from "./Reveal";
 
 // Index-matched to expertiseAreas order in lib/content.ts:
-// S.01 Space Planning, S.02 Hotels, S.03 Cafés, S.04 Restaurants,
-// S.05 Co-working Offices, S.06 Cinematography.
+// Space Planning, Hotels, Cafés, Restaurants,
+// Co-working Offices, Cinematography.
 const expertiseImages: string[] = [
   "/images/expertise/expertise-space-planning.jpg",
   "/images/expertise/expertise-hotels.jpg",
