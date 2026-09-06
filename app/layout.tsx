@@ -37,3 +37,9 @@ export default function RootLayout({
       <body>
         <Header />
         <FullNav />
+        {children}
+        <Footer />
+      </body>
+    </html>
+  );
+}
