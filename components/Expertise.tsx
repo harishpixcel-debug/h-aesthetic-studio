@@ -4,16 +4,17 @@ import Image from "next/image";
 import { expertiseAreas } from "@/lib/content";
 import Reveal from "./Reveal";
 
-// Index-matched to expertiseAreas order: Space Planning, Hotels, Cafés,
-// Restaurants, Co-working Offices. Slot 5 (Workplace) is ready for when
-// a 6th area is added to lib/content.
-const expertiseImages = [
+// Index-matched to expertiseAreas order in lib/content.ts:
+// S.01 Space Planning, S.02 Hotels, S.03 Cafés, S.04 Restaurants,
+// S.05 Co-working Offices. S.06 (Cinematography) has no photo yet —
+// left undefined so it falls back to the SVG placeholder below.
+const expertiseImages: (string | undefined)[] = [
   "/images/expertise/expertise-space-planning.jpg",
   "/images/expertise/expertise-hotels.jpg",
   "/images/expertise/expertise-cafes.jpg",
   "/images/expertise/expertise-restaurants.jpg",
   "/images/expertise/expertise-coworking.jpg",
-  "/images/expertise/expertise-workplace.jpg",
+  undefined,
 ];
 
 export default function Expertise() {
@@ -34,14 +35,14 @@ export default function Expertise() {
               onClick={() => setExpanded(expanded === i ? null : i)}
               onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); setExpanded(expanded === i ? null : i); } }}
             >
-              <div className="plate" style={{ position: "relative", overflow: "hidden" }}>
+              <div className="plate">
                 {expertiseImages[i] ? (
                   <Image
-                    src={expertiseImages[i]}
+                    src={expertiseImages[i] as string}
                     alt={`${area.name} interior — h-aesthetic studio`}
                     fill
                     style={{ objectFit: "cover" }}
-                    sizes="(min-width: 1024px) 20vw, (min-width: 640px) 33vw, 80vw"
+                    sizes="240px"
                   />
                 ) : (
                   <svg viewBox="0 0 240 140" preserveAspectRatio="xMidYMid slice">
