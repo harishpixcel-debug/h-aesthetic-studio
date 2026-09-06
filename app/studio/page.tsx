@@ -4,7 +4,7 @@ import Image from "next/image";
 export const metadata = {
   title: "Studio — h-aesthetic studio",
   description:
-    "h-aesthetic studio is a designer-led interior practice with a decade of hands-on experience delivering commercial, residential, hospitality and café interiors.",
+    "h-aesthetic studio is a designer-led interior practice delivering commercial, residential, hospitality and café interiors.",
 };
 
 export default function StudioPage() {
@@ -22,7 +22,7 @@ export default function StudioPage() {
           maxWidth: "18ch",
           marginBottom: 56
         }}>
-          Ten years of spaces.<br /><em>One standard of work.</em>
+          Design, treated as our own.<br /><em>One standard of work.</em>
         </h1>
 
         {/* Divider */}
@@ -75,9 +75,8 @@ export default function StudioPage() {
               color: "#4a4740",
               marginBottom: 28
             }}>
-              h-aesthetic studio is a designer-led interior practice built on a decade of
-              hands-on experience delivering commercial, residential, hospitality and café
-              interiors — from concept through completion.
+              h-aesthetic studio is a designer-led interior practice delivering commercial,
+              residential, hospitality and café interiors — from concept through completion.
             </p>
             <p style={{
               fontSize: 17,
