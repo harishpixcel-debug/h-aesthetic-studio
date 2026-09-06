@@ -5,15 +5,17 @@ import { expertiseAreas } from "@/lib/content";
 import Reveal from "./Reveal";
 
 // Index-matched to expertiseAreas order in lib/content.ts:
-// Space Planning, Hotels, Cafés, Restaurants,
-// Co-working Offices, Cinematography.
-const expertiseImages: string[] = [
+// S.01 Space Planning, S.02 Hotels, S.03 Cafés, S.04 Restaurants,
+// S.05 Co-working Offices. S.06 Cinematography, —
+// left undefined so it falls back to the SVG placeholder below.
+const expertiseImages: (string | undefined)[] = [
   "/images/expertise/expertise-space-planning.jpg",
   "/images/expertise/expertise-hotels.jpg",
   "/images/expertise/expertise-cafes.jpg",
   "/images/expertise/expertise-restaurants.jpg",
   "/images/expertise/expertise-coworking.jpg",
-  "/images/expertise/expertise-cinematography.jpg",
+  "/images/expertise/expertise-cinematography.jpg"
+  undefined,
 ];
 
 export default function Expertise() {
@@ -37,7 +39,7 @@ export default function Expertise() {
               <div className="plate">
                 {expertiseImages[i] ? (
                   <Image
-                    src={expertiseImages[i]}
+                    src={expertiseImages[i] as string}
                     alt={`${area.name} interior — h-aesthetic studio`}
                     fill
                     style={{ objectFit: "cover" }}
