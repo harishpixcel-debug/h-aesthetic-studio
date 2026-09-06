@@ -47,6 +47,9 @@ export default function InquiryForm() {
           <a href={contact.emailHref} className="link-arrow">
             {contact.email} <span className="arrow">→</span>
           </a>
+          <a href={contact.instagramHref} target="_blank" rel="noopener noreferrer" className="link-arrow">
+            @{contact.instagram} <span className="arrow">→</span>
+          </a>
         </div>
       </div>
 
