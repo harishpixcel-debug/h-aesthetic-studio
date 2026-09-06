@@ -15,8 +15,8 @@ export const studio = {
 export const contact = {
   phone: "+91 85918-78948",
   phoneHref: "tel:+918591878948",
-  email: "h.aestheticstudioo@gmail.com",
-  emailHref: "mailto:h.aestheticstudioo@gmail.com",
+   email: "hello@h-aestheticstudio.com",
+  emailHref: "mailto:hello@h-aestheticstudio.com",
   instagram: "h.aesthetic.studio",
   instagramHref: "https://www.instagram.com/h.aesthetic.studio/",
   behance: null as string | null,
