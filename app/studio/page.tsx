@@ -4,7 +4,7 @@ import Image from "next/image";
 export const metadata = {
   title: "Studio — h-aesthetic studio",
   description:
-    "h-aesthetic studio is a designer-led interior practice delivering commercial, residential, hospitality and café interiors.",
+    "h-aesthetic studio is a designer-led interior practice delivering commercial, residential, hospitality and café interiors — from concept through completion.",
 };
 
 export default function StudioPage() {
@@ -22,10 +22,10 @@ export default function StudioPage() {
           maxWidth: "18ch",
           marginBottom: 40
         }}>
-          Design, treated as our own.<br /><em>One standard of work.</em>
+          Design precision.<br /><em>Grounded in reality.</em>
         </h1>
 
-        {/* Material plates — small, horizontal, understated */}
+        {/* Material plates */}
         <div style={{
           display: "flex",
           gap: 16,
@@ -75,27 +75,35 @@ export default function StudioPage() {
               color: "#4a4740",
               marginBottom: 28
             }}>
-              h-aesthetic studio is a designer-led interior practice delivering commercial,
-              residential, hospitality and café interiors — from concept through completion.
+              h-aesthetic studio is an interior practice built on a simple premise: a space
+              should age with dignity, and its execution should be flawless. Drawing on
+              experience in design and project management since 2016, the studio exists to
+              close the gap between design intent and site reality.
             </p>
+
+            <div className="eyebrow" style={{ marginBottom: 12 }}>Our Material Truth</div>
             <p style={{
               fontSize: 17,
               lineHeight: 1.75,
               color: "#4a4740",
               marginBottom: 28
             }}>
-              Every project is treated as our own. Decisions are made with the same care
-              for quality and cost as if the space belonged to us — not passed down a chain,
-              not diluted by process.
+              We design around raw, grounded materials and quiet, earthy tones — travertine,
+              microtopping, lime plaster, honest timber, tactile steel. Beauty comes from how
+              light moves across a textured surface, and how a space feels at human scale —
+              not from surface-level trends.
             </p>
+
+            <div className="eyebrow" style={{ marginBottom: 12 }}>How We Work</div>
             <p style={{
               fontSize: 17,
               lineHeight: 1.75,
               color: "#4a4740"
             }}>
               Depending on what a project needs, h-aesthetic works as a design and planning
-              studio or takes on full turnkey delivery — managing vendors, execution and
-              handover end to end.
+              studio, or takes on full delivery — managing vendors, execution and handover
+              end to end. Material choices are made alongside cost and site realities from
+              day one, not after the fact.
             </p>
           </div>
 
