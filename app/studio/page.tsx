@@ -28,26 +28,41 @@ export default function StudioPage() {
         {/* Material plates */}
         <div style={{
           display: "flex",
+          flexWrap: "wrap",
           gap: 16,
           marginBottom: 48,
           maxWidth: 700
         }}>
-          <div style={{ position: "relative", width: 320, aspectRatio: "3 / 2", overflow: "hidden", flexShrink: 0 }}>
+          <div style={{
+            position: "relative",
+            flex: "1 1 260px",
+            maxWidth: 320,
+            minWidth: 200,
+            aspectRatio: "3 / 2",
+            overflow: "hidden"
+          }}>
             <Image
               src="/images/studio/studio-plate-commercial.jpg"
               alt="Modern commercial office interior"
               fill
               style={{ objectFit: "cover" }}
-              sizes="320px"
+              sizes="(min-width: 700px) 320px, 45vw"
             />
           </div>
-          <div style={{ position: "relative", width: 320, aspectRatio: "3 / 2", overflow: "hidden", flexShrink: 0 }}>
+          <div style={{
+            position: "relative",
+            flex: "1 1 260px",
+            maxWidth: 320,
+            minWidth: 200,
+            aspectRatio: "3 / 2",
+            overflow: "hidden"
+          }}>
             <Image
               src="/images/studio/studio-plate-residential.jpg"
               alt="Minimalist residential living space"
               fill
               style={{ objectFit: "cover" }}
-              sizes="320px"
+              sizes="(min-width: 700px) 320px, 45vw"
             />
           </div>
         </div>
