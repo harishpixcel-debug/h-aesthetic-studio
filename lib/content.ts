@@ -27,7 +27,7 @@ export const navLinks = [
   { label: "Studio", href: "/studio" },
   { label: "Expertise", href: "/#expertise" },
   { label: "Work", href: "/work" },
-  { label: "Process", href: "/process" },
+  { label: "Process", href: "/#process" },
   { label: "Contact", href: "/contact" },
 ];
 
