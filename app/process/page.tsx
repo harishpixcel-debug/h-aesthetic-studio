@@ -1,12 +1,9 @@
-import PageStub from "@/components/PageStub";
-import { processSteps } from "@/lib/content";
+import { redirect } from "next/navigation";
 
-export default function ProcessPage() {
-  return (
-    <PageStub
-      eyebrow="The Process"
-      title="From first idea to final detail."
-      copy={`A ${processSteps.length}-stage working approach: ${processSteps.map((s) => s.name).join(" → ")}. A full walkthrough of each stage is in development.`}
-    />
-  );
+// The Process content now lives on the homepage at /#process (matching how
+// Expertise works). This route stays in place only to catch anyone with an
+// old bookmark or a search-indexed link to /process, and sends them to the
+// real content instead of hitting a 404.
+export default function ProcessRedirect() {
+  redirect("/#process");
 }
