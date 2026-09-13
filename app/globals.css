@@ -200,6 +200,26 @@ a:focus-visible, button:focus-visible { outline: 1.5px solid var(--accent); outl
 .process-name { font-family: var(--font-ui); font-weight: 600; font-size: clamp(1rem, 1.6vw, 1.2rem); margin-top: 12px; }
 .process-idea { font-size: 13px; color: rgba(245,242,236,0.55); margin-top: 10px; line-height: 1.4; }
 @media (max-width: 900px) { .process-list { grid-template-columns: repeat(2, 1fr); } .process-step { border-right: 1px solid var(--stone-line-dark); border-top: 1px solid var(--stone-line-dark); padding: 18px; } .process-step:nth-child(2n) { border-right: none; } }
+/* Add these rules near the existing .process-* rules in globals.css */
+
+.process-node {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+  margin-bottom: 16px;
+}
+.process-icon {
+  color: var(--accent);
+  opacity: 0.85;
+  margin-bottom: 10px;
+}
+.process-icon svg {
+  width: 26px;
+  height: 26px;
+  display: block;
+}
+
 
 /* OBJECTS */
 .material-band { margin-top: 28px; height: 120px; border: 1px solid var(--stone-line); background: linear-gradient(100deg, #E7E1D2 0%, #D8CFBB 28%, #B9AF98 52%, #8C8672 74%, #57544A 100%); position: relative; z-index: 2; }
