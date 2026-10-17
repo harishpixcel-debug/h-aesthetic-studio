@@ -119,7 +119,7 @@ export default function InquiryForm() {
               className="link-arrow solid"
               disabled={state === "submitting"}
             >
-              {state === "submitting" ? "Sending..." : "Send Inquiry"}
+              {state === "submitting" ? "Sending..." : "Send Enquiry"}
             </button>
           </div>
 
